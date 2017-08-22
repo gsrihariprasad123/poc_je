@@ -1,0 +1,21 @@
+<div ng-controller="homeCtrl">
+  <form novalidate>
+    
+   
+  </form>
+  </br></br></br>
+  <div ng-repeat="employee in getalldata">
+  Name: <input type="text" ng-model="employee.name" required> </input>
+  id: <input type="text" ng-model="employee.id" readonly="readonly" required> </input>
+  exp: <input type="text" ng-model="employee.exp" required> </input>
+  position: <input type="text" ng-model="employee.position" required></input>
+  age: <input type="text" ng-model="employee.age" required> </input>
+   <!-- <button nclass="button" g-click="getupdate(employee.name,employee.id,employee.exp,employee.position,employee.age)">update Employee Details</button>-->
+   <input type="button" value="Open Popup Window" ng-click="OpenPopupWindow(employee.name,employee.id,employee.exp,employee.position,employee.age)" />
+   
+  
+<br>
+</div>
+      
+    
+</div>

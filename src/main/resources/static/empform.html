@@ -1,0 +1,21 @@
+
+<div ng-controller="empformCtrl">
+
+<div class="hsonuc">
+  <form >
+  </br></br>
+  emp id:
+    <input type="text" ng-model="emp1.id"  required></input><br><br>
+    name : <input type="text" ng-model="emp1.name" required></input><br><br>
+    age:  <input type="text" ng-model="emp1.age" required></input><br><br>
+     exp:  <input type="text" ng-model="emp1.exp" required></input><br><br>
+    position:    <input type="text" ng-model="emp1.position" required ></input><br><br>
+    <button class="button" ng-click="submitform()">form submit</button></br></br>
+     
+	<div><p id=empmsg>{{empmsg}}</p></div>
+    
+  </form>
+  </div>
+</div>
+
+

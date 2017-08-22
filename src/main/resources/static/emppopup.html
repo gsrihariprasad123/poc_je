@@ -1,0 +1,33 @@
+<html>
+
+<script src="/js/popup.js"></script>
+<style>
+
+
+div.relative {
+    position: fixed;
+   left:90px;
+    top:50px;
+    width:45%
+    border: 3px solid #73AD21;
+}
+</style>
+<body onload="fillDataFunction()">
+<div class="relative" ng-app="myApp1" ng-controller="myCtrl11">
+<div >
+       empname: <input type="text" id="ename" name="ename"/> </br></br>
+       eid: <input type="text" id="eid" name="eid" readonly="readonly"/></br></br>
+       eposition: <input type="text" id="eposition" name="eposition"/></br></br>
+       eage: <input type="text" id="eage" name="eage"/></br></br>
+       eexp: <input type="text" id="eexp" name="eexp"/> </br><br>
+        <button class="button" onclick="getupdatefrompopup(ename,eid,eposition ,eage,eexp)">update Employee Details</button></br>
+        	
+         </div>
+         </div>
+         </body>
+</html>
+
+
+  
+
+

@@ -1,0 +1,81 @@
+.block-menu {
+	display: block;
+	
+	 position:relative;
+    left:20%;
+}
+
+.block-menu li {
+	display: inline-block;
+    color: #0066ffc;
+}
+.block-menu li a {
+	color: #ff0066;
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 15px 10px;
+}
+
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+    background: #0000cc;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+    color:#00ffff;
+    background: #0000cc;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+    
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffffff;
+}
+.front, .back {
+
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ac7339;
+	padding: 15px 10px;
+	
+	pointer-events: none;
+	box-sizing: border-box;
+}

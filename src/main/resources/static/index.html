@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js"></script>
+<script src="/js/mainapp.js"></script>
+<script src="/js/empform.js"></script>
+<script src="/js/getdata.js"></script>
+<script src="/js/removeCtrl.js"></script>
+<script src="/js/homeCtrl.js"></script>
+<script src="/js/emppopupCtrl.js"></script>
+<link
+	href="css/main.css" 
+	rel="stylesheet"/>
+	<link
+	href="css/main2.css" 
+	rel="stylesheet"/>
+	
+<body ng-app="myApp">
+<div ng-controller="mainCtl">
+
+<div  class="relative">
+<ul class="block-menu">
+	<li><a href="#/!" class="three-d">
+		Home
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">HOME</span>
+			<span class="back">Home</span>
+		</span>
+	</a></li>
+	<li ><a href="#!empform" class="three-d">
+		Employee form
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Employee form</span>
+			<span class="back">Employee form</span>
+		</span>
+	</a></li>
+    
+    <li ><a href="#!getemp" class="three-d">
+		Get employee data by Id
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Get employee data by Id</span>
+			<span class="back">Get employee data by Id</span>
+		</span>
+	</a></li>
+    
+    
+    <li ><a href="#!removebyid" class="three-d">
+		remove employee data by Id
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">remove employee data by Id</span>
+			<span class="back">remove employee data by Id</span>
+		</span>
+	</a></li>
+	<!-- more items here -->
+</ul>
+</div>
+
+</div>
+<div id="fourth" ng-view></div>
+</body>
+</html>
+

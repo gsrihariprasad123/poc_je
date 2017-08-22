@@ -1,0 +1,26 @@
+
+<div ng-controller="getdataCtrl">
+<div class="hsonuc">
+  <form novalidate>
+  <br>
+  <br>
+  <br>
+    id:
+    <input type="text" ng-model="emp.id" ></input><br><br>
+   
+    <br>
+    <button class="button" ng-click="getData()">Get Employee Details</button>
+  </form>
+  </br></br></br>
+  
+  Name: <input type="text" ng-model="myWelcome.name" required></input> </br>
+  id: <input type="text" ng-model="myWelcome.id" readonly="readonly"></input>  </br>
+  exp: <input type="text" ng-model="myWelcome.exp" required> </input> </br>
+  position: <input type="text" ng-model="myWelcome.position" required> </input> </br>
+  age: <input type="text" ng-model="myWelcome.age" required> </input> </br>
+<br><br>
+    <button class="button" ng-click="getupdate()">update Employee Details</button>
+    </div>
+    
+</div>
+
